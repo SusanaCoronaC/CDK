@@ -1,15 +1,30 @@
 pipeline {
   agent any
   stages {
-    stage('Inicio_environment') {
+    stage('Inicio_Enviroment') {
       steps {
-        echo 'Iniciando construcción'
+        echo 'Iniciando construcciÃ³n de proyecto....'
+        sh 'env'
       }
     }
 
-    stage('instalacion') {
+    stage('Instalacion') {
       steps {
         sh 'gcc -v'
+      }
+    }
+
+    stage('Compilación') {
+      steps {
+        sh '''gcc programa.c -o mi_programa
+ls -ltr'''
+        sh './mi_programa'
+      }
+    }
+
+    stage('Limpieza') {
+      steps {
+        sh 'rm mi_programa'
       }
     }
 
