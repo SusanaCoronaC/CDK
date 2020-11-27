@@ -1,0 +1,6 @@
+Flask
+requests
+urllib.parse
+bs4
+matplotlib
+Pillow
