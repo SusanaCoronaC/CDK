@@ -10,7 +10,6 @@ pipeline {
 
     stage('Instalacion') {
       steps {
-        sh 'docker -v'
         powershell 'docker -v'
       }
     }
