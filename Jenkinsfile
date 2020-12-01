@@ -17,7 +17,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'build'
-        powershell 'docker build -t"susana/CDK"'
+        powershell 'docker build -t .'
       }
     }
 
