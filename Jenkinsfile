@@ -17,7 +17,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'build'
-        powershell 'docker build -t "flask_compose_web:latest" .'
+        powershell 'docker build -t "python:3.7-alpine" .'
       }
     }
 
