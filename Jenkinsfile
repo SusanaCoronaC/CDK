@@ -4,7 +4,7 @@ pipeline {
     stage('Inicio_Enviroment') {
       steps {
         echo 'Iniciando construcciÃ³n de proyecto....'
-        sh 'env'
+        sh '#env'
       }
     }
 
