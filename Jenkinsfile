@@ -14,17 +14,9 @@ pipeline {
       }
     }
 
-    stage('Compilación') {
-      steps {
-        sh '''gcc programa.c -o mi_programa
-ls -ltr'''
-        sh './mi_programa'
-      }
-    }
-
     stage('Limpieza') {
       steps {
-        sh 'rm mi_programa'
+        sh '#rm mi_programa'
       }
     }
 
