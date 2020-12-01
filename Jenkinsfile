@@ -17,8 +17,7 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'build'
-        powershell 'build '
+        echo 'build'
       }
     }
 
