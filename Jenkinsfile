@@ -14,7 +14,7 @@ pipeline {
       }
     }
 
-    stage('Limpieza') {
+    stage('Build') {
       steps {
         sh '#rm mi_programa'
       }
