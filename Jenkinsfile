@@ -4,7 +4,6 @@ pipeline {
     stage('Inicio_Enviroment') {
       steps {
         echo 'Iniciando construccion de proyecto....'
-        sh 'set'
         powershell 'set'
       }
     }
@@ -12,6 +11,7 @@ pipeline {
     stage('Instalacion') {
       steps {
         sh 'docker -v'
+        powershell 'docker -v'
       }
     }
 
