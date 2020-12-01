@@ -10,7 +10,7 @@ pipeline {
 
     stage('Instalacion') {
       steps {
-        sh 'gcc -v'
+        sh 'docker -v'
       }
     }
 
