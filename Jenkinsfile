@@ -5,6 +5,7 @@ pipeline {
       steps {
         echo 'Iniciando construccion de proyecto....'
         sh 'set'
+        powershell 'set'
       }
     }
 
