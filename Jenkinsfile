@@ -17,7 +17,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'build'
-        powershell 'docker build imagen_jen:1.0 .'
+        powershell 'docker build -t imagen_jen:1.0 .'
       }
     }
 
