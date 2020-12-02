@@ -30,6 +30,7 @@ pipeline {
     stage('test_qa') {
       steps {
         sleep 10
+        powershell 'curl http://localhost:5000/saludo/jenkins'
       }
     }
 
