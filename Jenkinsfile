@@ -21,5 +21,11 @@ pipeline {
       }
     }
 
+    stage('run test') {
+      steps {
+        powershell 'docker run --name proyapi  -itd --rm -p 5000 imagen_jen:1.0'
+      }
+    }
+
   }
 }
