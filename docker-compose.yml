@@ -3,7 +3,6 @@ services:
   web:
     build: .
     ports:
-     - "3000:3000"
-      #mapear el directorio externo con un directorio de un contenedor
+      - "5000:5000"
     volumes:
       - ./src:/code
