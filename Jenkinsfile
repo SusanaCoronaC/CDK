@@ -27,5 +27,11 @@ pipeline {
       }
     }
 
+    stage('test_qa') {
+      steps {
+        sleep 10
+      }
+    }
+
   }
 }
