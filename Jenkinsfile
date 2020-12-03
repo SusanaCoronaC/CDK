@@ -34,5 +34,11 @@ pipeline {
       }
     }
 
+    stage('publish') {
+      steps {
+        powershell 'docker push imagen_jen:1.0'
+      }
+    }
+
   }
 }
