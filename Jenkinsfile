@@ -36,7 +36,7 @@ pipeline {
 
     stage('publish') {
       steps {
-        powershell 'docker push imagen_jen:1.0'
+        powershell 'C:\\Users\\susana\\semana2_modificado\\flask_compose\\  docker push imagen_jen:1.0'
       }
     }
 
